@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ocean Corridor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="m-0 p-0 box-border bg-slate-100 text-gray-800">
+
+  <!-- Feature 1 and 2: Header + navbar -->
+  <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto flex items-center justify-between h-[75px] px-4">
+      <h1 class="text-2xl font-bold">Ocean Corridor</h1>
+      <nav>
+        <ul class="flex gap-6 text-white font-medium">
+          <li><a href="#about-us" class="hover:underline">About</a></li>
+          <li><a href="#marine-life" class="hover:underline">Marine Life</a></li>
+          <li><a href="#faqs" class="hover:underline">FAQs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Feature 3: About US / Hero Section -->
+  <section class="bg-[url('assets/bg.jpg')] bg-cover bg-center h-[350px] w-full">
+    <div class="container mx-auto flex items-start justify-start h-full">
+      <div id="about-us" class="p-6 max-w-3xl bg-black bg-opacity-60 rounded-lg mt-10 ml-4 sm:ml-20">
+        <h2 class="text-white text-2xl font-bold">About Us</h2>
+        <p class="text-white mt-4">
+          At Ocean Corridor, we’re on a mission to bring the mysterious and mesmerizing world beneath the waves closer to you.
+          Our website is dedicated to introducing people of all ages to the incredible creatures that inhabit our oceans —
+          from the graceful jellyfish and intelligent octopus to the mighty whales and vibrant coral reefs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+ <!-- Feature 4: Marine Life Cards -->
+<section id="marine-life" class="py-16 bg-slate-800 text-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-10 text-center">Marine Life</h2>
+  
+      <!-- Horizontal Scroll (for responsive design)-->
+      <div class="flex flex-row flex-nowrap gap-6 overflow-x-auto pb-4">
+  
+
+        <div class="min-w-[250px] bg-blue-400 border border-blue-200 rounded-lg shadow-sm text-sm">
+          <img class="rounded-t-lg h-32 w-full object-cover" src="assets/1.jpg" alt="Clownfish" />
+          <div class="p-4 text-gray-800">
+            <h5 class="mb-1 text-lg font-semibold">Clownfish</h5>
+            <p>
+              Clownfish are orange-and-white reef fish that live with sea anemones. They’re immune to stings and help protect the anemone.
+            </p>
+          </div>
+        </div>
+  
+
+        <div class="min-w-[250px] bg-blue-500 border border-green-200 rounded-lg shadow-sm text-sm">
+          <img class="rounded-t-lg h-32 w-full object-cover" src="assets/2.jpg" alt="Axolotl" />
+          <div class="p-4 text-gray-800">
+            <h5 class="mb-1 text-lg font-semibold">Axolotl</h5>
+            <p>
+              Axolotls are unique amphibians known for their ability to regenerate limbs and retain larval features throughout life.
+              They live in freshwater lakes in Mexico and breathe through external feathery gills.
+            </p>
+          </div>
+        </div>
+
+        <div class="min-w-[250px] bg-blue-500 border border-blue-300 rounded-lg shadow-sm text-sm">
+          <img class="rounded-t-lg h-32 w-full object-cover" src="assets/3.jpg" alt="Sea Turtle" />
+          <div class="p-4 text-gray-800">
+            <h5 class="mb-1 text-lg font-semibold">Sea Turtle</h5>
+            <p>
+              Sea turtles are graceful swimmers that journey across oceans. They play a vital role in marine ecosystems and face many conservation threats.
+            </p>
+          </div>
+        </div>
+
+        <div class="min-w-[250px] bg-blue-300 border border-yellow-200 rounded-lg shadow-sm text-sm">
+          <img class="rounded-t-lg h-32 w-full object-cover" src="assets/4.jpg" alt="Corydoras" />
+          <div class="p-4 text-gray-800">
+            <h5 class="mb-1 text-lg font-semibold">Corydoras</h5>
+            <p>
+              Corydoras are small, peaceful freshwater catfish commonly found in South American rivers.
+              They are bottom dwellers that help keep tanks clean by scavenging leftover food.
+            </p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Feature 5: FAQ Section-->
+  <section id="faqs" class="bg-blue-950 text-gray-100 py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="mb-12 text-4xl font-bold text-center">Frequently Asked Questions</h2>
+      <div class="flex flex-col divide-y divide-gray-700 max-w-4xl mx-auto">
+        <details>
+          <summary class="py-3 cursor-pointer font-medium hover:underline">Who is this site for?</summary>
+          <div class="px-4 pb-4">
+            <p>For anyone curious about marine life.</p>
+          </div>
+        </details>
+        <details>
+          <summary class="py-3 cursor-pointer font-medium hover:underline">Can I suggest a sea creature to feature?</summary>
+          <div class="px-4 pb-4">
+            <p>Absolutely! Email us at Ocean@Corridor.com</p>
+          </div>
+        </details>
+        <details>
+          <summary class="py-3 cursor-pointer font-medium hover:underline">Do the creatures on the site dance when I scroll?</summary>
+          <div class="px-4 pb-4">
+            <p>That would be difficult with just Tailwind CSS, but we're working on it :]</p>
+          </div>
+        </details>
+        <details>
+          <summary class="py-3 cursor-pointer font-medium hover:underline">Are axolotls technically ocean creatures?</summary>
+          <div class="px-4 pb-4">
+            <p>Not really, they’re freshwater legends — but too cute to leave out!</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 6: Footer -->
+  <footer class="bg-slate-900 text-white py-6">
+    <div class="container mx-auto text-center px-4">
+      <p>&copy; 2025 Ocean Corridor. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
